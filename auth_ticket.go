@@ -20,8 +20,8 @@ import (
 	"time"
 
 	"nfgo.ga/nfgo/nerrors"
-	"nfgo.ga/nfgo/nutil/jwt"
 	"nfgo.ga/nfgo/nutil/ncrypto"
+	"nfgo.ga/nfgo/x/nsecurity/jwt"
 )
 
 // AuthTicket -
