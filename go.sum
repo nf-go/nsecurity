@@ -618,7 +618,7 @@ honnef.co/go/tools v0.0.0-20190102054323-c2f93a96b099/go.mod h1:rf3lG4BRIbNafJWh
 honnef.co/go/tools v0.0.0-20190523083050-ea95bdfd59fc/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
 honnef.co/go/tools v0.0.1-2019.2.3 h1:3JgtbtFHMiCmsznwGVTUWbgGov+pVqnlf1dEJTNAXeM=
 honnef.co/go/tools v0.0.1-2019.2.3/go.mod h1:a3bituU0lyd329TUQxRnasdCoJDkEUEAqEt0JzvZhAg=
-nfgo.ga/nfgo v0.1.5-0.20210319220633-7119a7bd9c06 h1:RBqJd0iHqx3ZyKGeo5C6nw4uDQ6C+qKtAmz34b12xRQ=
-nfgo.ga/nfgo v0.1.5-0.20210319220633-7119a7bd9c06/go.mod h1:1YxTuH3KqYb3Zuh6nClgFXcQN7Hn72A8/xxnAorSTbQ=
+nfgo.ga/nfgo v0.2.1 h1:E9Xf22klgy4Hw7S9rJXmHMKyn4ppxqocS9iIukK+7cg=
+nfgo.ga/nfgo v0.2.1/go.mod h1:1YxTuH3KqYb3Zuh6nClgFXcQN7Hn72A8/xxnAorSTbQ=
 sigs.k8s.io/yaml v1.1.0/go.mod h1:UJmg0vDUVViEyp3mgSv9WPwZCDxu4rQW1olrI1uml+o=
 sourcegraph.com/sourcegraph/appdash v0.0.0-20190731080439-ebfcffb1b5c0/go.mod h1:hI742Nqp5OhwiqlzhgfbWU4mW4yO10fP+LoT9WOswdU=
