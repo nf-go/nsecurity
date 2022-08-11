@@ -58,9 +58,15 @@ func (s *redisSignKeyStore) Get(clientType, subject string) (signKey string, err
 
 	signKeyRedisKey := RedisKeySignKey.String(clientType, subject)
 	if s.securityConfig.RefreshSignKeyLife {
-		conn.Send("EXPIRE", signKeyRedisKey, int64(s.securityConfig.SignKeyLifeTime/time.Second))
-		conn.Send("GET", signKeyRedisKey)
-		conn.Flush()
+		if err = conn.Send("EXPIRE", signKeyRedisKey, int64(s.securityConfig.SignKeyLifeTime/time.Second)); err != nil {
+			return
+		}
+		if err = conn.Send("GET", signKeyRedisKey); err != nil {
+			return
+		}
+		if err = conn.Flush(); err != nil {
+			return
+		}
 		if _, err = conn.Receive(); err != nil {
 			return
 		}

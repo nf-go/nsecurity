@@ -76,7 +76,9 @@ func InitPolicy(enforcer casbin.IEnforcer, securityConfig *SecurityConfig, rules
 			for i := range ps {
 				params[i] = strings.TrimSpace(ps[i])
 			}
-			enforcer.AddNamedPolicy(ps[0], params[1:]...)
+			if _, err := enforcer.AddNamedPolicy(ps[0], params[1:]...); err != nil {
+				return err
+			}
 		}
 	}
 
