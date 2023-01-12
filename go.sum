@@ -401,3 +401,5 @@ modernc.org/z v1.6.0/go.mod h1:hVdgNMh8ggTuRG1rGU8x+xGRFfiQUIAw0ZqlPy8+HyQ=
 modernc.org/z v1.7.0/go.mod h1:hVdgNMh8ggTuRG1rGU8x+xGRFfiQUIAw0ZqlPy8+HyQ=
 nfgo.ga/nfgo v0.3.2 h1:epq6+777wQZk45qfjfK0cbdY5cEY6DU69hAH9t2BT08=
 nfgo.ga/nfgo v0.3.2/go.mod h1:JOgf8dzT+CvsID3CcZxLO5uH0VBS2MbBZFxMDCQX1SE=
+nfgo.ga/nfgo v0.4.0 h1:YwZ/YggTJfyI4JwJsLk3WsLXUCr4xHClQuKiUI8HfIg=
+nfgo.ga/nfgo v0.4.0/go.mod h1:6AV0GrLlHqWHTOES1qoOVVa+J0xq8ckWM1CfhKHDh90=

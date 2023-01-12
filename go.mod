@@ -9,7 +9,7 @@ require (
 	github.com/pascaldekloe/jwt v1.12.0
 	github.com/stretchr/testify v1.8.1
 	gorm.io/gorm v1.24.3
-	nfgo.ga/nfgo v0.3.2
+	nfgo.ga/nfgo v0.4.0
 )
 
 require (
