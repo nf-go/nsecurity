@@ -21,7 +21,6 @@ import (
 
 	"nfgo.ga/nfgo/nerrors"
 	"nfgo.ga/nfgo/nutil/ncrypto"
-	"nfgo.ga/nfgo/x/nsecurity/jwt"
 )
 
 // AuthTicket -
@@ -35,10 +34,10 @@ type AuthTicket struct {
 }
 
 // VerifyToken -
-func (a *AuthTicket) VerifyToken(jwtSecret string) error {
+func (a *AuthTicket) VerifyToken(validateFn func(token string) (*JWTPayload, error)) error {
 
 	// Check the jwt token
-	claims, err := jwt.ValidateToken(jwtSecret, a.Token)
+	claims, err := validateFn(a.Token)
 	if err != nil {
 		return nerrors.ErrUnauthorized
 	}

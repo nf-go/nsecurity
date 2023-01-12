@@ -38,6 +38,11 @@ func TestAuthTicketVerifySignature(t *testing.T) {
 
 	assert.True(t, ticket.VerifySignature(signKey), "the signature should be valid")
 
-	assert.NoError(t, ticket.VerifyToken("VoCra8#GEBAbRl*+vos9UF@??gi8Oy"))
+	validateFn := func(token string) (*JWTPayload, error) {
+		claims := &JWTPayload{}
+		claims.Subject = "admin"
+		return claims, nil
+	}
+	assert.NoError(t, ticket.VerifyToken(validateFn))
 
 }

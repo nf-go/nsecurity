@@ -18,12 +18,18 @@ import "time"
 
 // SecurityConfig -
 type SecurityConfig struct {
+	JWT                *JWTConfig    `yaml:"jwt"`
 	SignKeyLifeTime    time.Duration `yaml:"signKeyLifeTime"`
 	RefreshSignKeyLife bool          `yaml:"refreshSignKeyLife"`
 	TimeWindow         time.Duration `yaml:"timeWindow"`
 	Anons              []string      `yaml:"anons"`
 	Model              string        `yaml:"model"`
 	Policies           []string      `yaml:"policies"`
+}
+
+type JWTConfig struct {
+	JWTPublicKey  string `yaml:"jwtPublicKey"`
+	JWTPrivateKey string `yaml:"jwtPrivateKey"`
 }
 
 // SetDefaultValues -
