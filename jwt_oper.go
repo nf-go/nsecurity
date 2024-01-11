@@ -21,8 +21,8 @@ import (
 	"errors"
 	"time"
 
+	"github.com/nf-go/nfgo/nlog"
 	"github.com/pascaldekloe/jwt"
-	"nfgo.ga/nfgo/nlog"
 )
 
 type JWTOper interface {

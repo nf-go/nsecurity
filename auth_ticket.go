@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"time"
 
-	"nfgo.ga/nfgo/nerrors"
-	"nfgo.ga/nfgo/nutil/ncrypto"
+	"github.com/nf-go/nfgo/nerrors"
+	"github.com/nf-go/nfgo/nutil/ncrypto"
 )
 
 // AuthTicket -

@@ -21,8 +21,8 @@ import (
 	"github.com/casbin/casbin/v2"
 	"github.com/casbin/casbin/v2/model"
 	gormadapter "github.com/casbin/gorm-adapter/v3"
+	"github.com/nf-go/nfgo/nlog"
 	"gorm.io/gorm"
-	"nfgo.ga/nfgo/nlog"
 )
 
 // NewEnforcer -

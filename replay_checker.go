@@ -18,9 +18,9 @@ import (
 	"time"
 
 	"github.com/gomodule/redigo/redis"
-	"nfgo.ga/nfgo/ndb"
-	"nfgo.ga/nfgo/nerrors"
-	"nfgo.ga/nfgo/nutil/ntypes"
+	"github.com/nf-go/nfgo/ndb"
+	"github.com/nf-go/nfgo/nerrors"
+	"github.com/nf-go/nfgo/nutil/ntypes"
 )
 
 const (
