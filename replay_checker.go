@@ -48,6 +48,7 @@ type redisReplayChecker struct {
 
 func (r *redisReplayChecker) VerifyReplay(requestID string) error {
 	conn := r.redisOper.Conn()
+	//nolint:errcheck
 	defer conn.Close()
 
 	ttl := int64(r.securityConfig.TimeWindow / time.Second)

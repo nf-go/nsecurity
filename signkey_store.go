@@ -54,6 +54,7 @@ func (s *redisSignKeyStore) Store(clientType, subject, signKey string) error {
 
 func (s *redisSignKeyStore) Get(clientType, subject string) (signKey string, err error) {
 	conn := s.redisOper.Conn()
+	//nolint:errcheck
 	defer conn.Close()
 
 	signKeyRedisKey := RedisKeySignKey.String(clientType, subject)
